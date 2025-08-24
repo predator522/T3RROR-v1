@@ -1,5 +1,5 @@
 import config from "../config/config.json" assert { type: "json" };
-import msgs from "../config/messages.json" assert { type: "json" };
+import msgs from "./config/messages.json";  
 
 const spamCache = new Map();
 
