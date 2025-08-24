@@ -1,5 +1,5 @@
 import cfg from "../../config/config.json" assert { type: "json" };
-import msgs from "../../config/messages.json" assert { type: "json" };
+import msgs from "./config/messages.json";  
 import { listCategories } from "../../lib/commandLoader.js";
 
 export default {
