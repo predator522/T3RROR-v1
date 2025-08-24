@@ -1,5 +1,5 @@
 import config from "../config/config.json" assert { type: "json" };
-import msgs from "../config/messages.json" assert { type: "json" };
+import msgs from "./config/messages.json";  
 
 export async function onGroupParticipantsUpdate({ sock, ev, config: cfg, msgs, DB }) {
   const { id: jid, action, participants } = ev;
