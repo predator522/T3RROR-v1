@@ -13,7 +13,7 @@ import { applySecurityGuards } from "./utils/security.js";
 import DB from "./utils/database.js";
 
 // ⬇️ Fix JSON imports with dynamic import
-const config = await import("./config/config.json", { assert: { type: "json" } }).then(m => m.default);
+import { config } from "./config/index.js";
 const msgs   = await import("./config/messages.json", { assert: { type: "json" } }).then(m => m.default);
 
 const __filename = fileURLToPath(import.meta.url);
