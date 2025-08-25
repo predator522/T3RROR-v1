@@ -1,5 +1,7 @@
 import fs from "fs-extra";
-import { config } from "../config/index.js";
+import { config } from "./config/index.js";
+
+console.log(config.botName); // example usage
 
 export default {
   name: "prefix",
