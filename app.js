@@ -14,6 +14,8 @@ import DB from "./utils/database.js";
 
 // ⬇️ Fix JSON imports with dynamic import
 import { config } from "./config/index.js";
+
+console.log(config.botName); // example usage
 const msgs   = await import("./config/messages.json", { assert: { type: "json" } }).then(m => m.default);
 
 const __filename = fileURLToPath(import.meta.url);
