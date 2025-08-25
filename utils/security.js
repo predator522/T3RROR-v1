@@ -1,4 +1,4 @@
-import config from "../config/config.json" assert { type: "json" };
+import { config } from "../config/index.js";
 import msgs from "./config/messages.json";  
 
 const spamCache = new Map();
