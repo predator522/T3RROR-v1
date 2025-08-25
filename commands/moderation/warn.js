@@ -1,4 +1,6 @@
-import { config } from "../config/index.js";
+import { config } from "./config/index.js";
+
+console.log(config.botName); // example usage
 
 export default {
   name: "warn",
