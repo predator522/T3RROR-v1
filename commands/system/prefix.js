@@ -1,5 +1,5 @@
 import fs from "fs-extra";
-import cfg from "../../config/config.json" assert { type: "json" };
+import { config } from "../config/index.js";
 
 export default {
   name: "prefix",
