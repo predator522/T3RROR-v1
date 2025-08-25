@@ -1,4 +1,6 @@
-import { config } from "../config/index.js";
+import { config } from "./config/index.js";
+
+console.log(config.botName); // example usage
 import msgs from "./config/messages.json";  
 
 export async function onGroupParticipantsUpdate({ sock, ev, config: cfg, msgs, DB }) {
