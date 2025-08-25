@@ -1,4 +1,4 @@
-import config from "../config/config.json" assert { type: "json" };
+import { config } from "../config/index.js";
 import msgs from "./config/messages.json";  
 
 export async function onGroupParticipantsUpdate({ sock, ev, config: cfg, msgs, DB }) {
